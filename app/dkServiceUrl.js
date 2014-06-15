@@ -1,2 +1,2 @@
 ﻿
-var dkServiceUrl = "http://localhost/cloudservice/";
+var dkServiceUrl = "http://dk-cloud-service.azurewebsites.net/";
