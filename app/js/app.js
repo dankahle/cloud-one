@@ -1,15 +1,25 @@
-'use strict';
+/// <reference path="../bower_components/angular/angular.js" />
+"use strict";
 
-// Declare app level module which depends on filters, and services
-angular.module('myApp', [
-  'ngRoute',
-  'myApp.filters',
-  'myApp.services',
-  'myApp.directives',
-  'myApp.controllers'
-]).
-config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
-  $routeProvider.otherwise({redirectTo: '/view1'});
-}]);
+var app = angular.module("app", []);
+
+app.controller("ctrl", function ($scope, $http) {
+
+/*
+	$scope.users = [
+		{ name: "dank", age: 50 },
+		{ name: "carl", age: 60 }
+	];
+*/
+
+
+	$http.get(dkServiceUrl + "api/User").success(function (data) {
+		$scope.users = data;
+	});
+
+});
+
+
+
+
+

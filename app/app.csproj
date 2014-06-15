@@ -66,21 +66,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="css\app.css" />
+    <Content Include="dkServiceUrl.js" />
     <Content Include="index.html" />
     <Content Include="js\app.js" />
-    <Content Include="js\controllers.js" />
-    <Content Include="js\directives.js" />
-    <Content Include="js\filters.js" />
-    <Content Include="js\services.js" />
-    <Content Include="partials\partial1.html" />
-    <Content Include="partials\partial2.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="css\" />
     <Folder Include="img\" />
   </ItemGroup>
   <PropertyGroup>
