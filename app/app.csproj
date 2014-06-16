@@ -66,7 +66,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="dkServiceUrl.js" />
+    <Content Include="scripts\dkServiceUrl.js" />
     <Content Include="index.html" />
     <Content Include="scripts\app.js" />
     <Content Include="Web.config" />
