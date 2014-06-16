@@ -13,7 +13,7 @@ app.controller("ctrl", function ($scope, $http) {
 */
 
 
-	$http.get(dkServiceUrl + "api/User").success(function (data) {
+	$http.get(dkGetServiceUrl() + "api/User").success(function (data) {
 		$scope.users = data;
 	});
 

@@ -68,15 +68,15 @@
   <ItemGroup>
     <Content Include="dkServiceUrl.js" />
     <Content Include="index.html" />
-    <Content Include="js\app.js" />
+    <Content Include="scripts\app.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="css\" />
-    <Folder Include="img\" />
+    <Folder Include="images\" />
+    <Folder Include="styles\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
