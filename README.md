@@ -1,4 +1,5 @@
 ### cloud-one
+###### vs.net 2013, angularjs
 
 A POC to show how to create a visual studio project that houses the angular seed and deploys on github.io. The site hits another project (cloud) which is a vs.net webapi/sql server/mongo serivices project published to azure web sites and sql database. 
 
