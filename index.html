@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Site One</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bower:js -->
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/angular.js"></script>
+    <!-- endbower -->
+
+</head>
+<body ng-controller="ctrl">
+
+	<h3>Users:</h3>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>Age</th>
+		</tr>
+		<tr ng-repeat="user in users">
+			<td>{{user.name}}</td>
+			<td>{{user.age}}</td>
+		</tr>
+	</table>
+
+	<!-- In production use:
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+	-->
+	<script src="dkServiceUrl.js"></script>
+	<script src="scripts/app.js"></script>
+</body>
+</html>
