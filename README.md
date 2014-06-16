@@ -1,6 +1,6 @@
 ### cloud-one
 
-A POC to show how to create a visual studio project that houses the angular seed and deploys on github.io pages (it's gh-pages branch). The site hits another project (cloud) which is a vs.net webapi/sql server/(mongo?) serivices project published to azure web sites and sql database. 
+A POC to show how to create a visual studio project that houses the angular seed and deploys on github.io. The site hits another project (cloud) which is a vs.net webapi/sql server/(mongo?) serivices project published to azure web sites and sql database. 
 
 The idea is to have the free msdn azure bucks support webapi serivces tied to sql server and free mongolab, then have multiple free github.io angular spas hitting the service. All would be free (with the $200/mo from msdn for azure).
 
