@@ -9,4 +9,15 @@ Had to cut corners on this and "fake" the build (just created a dist directory m
 
 The dkServiceUrl.js file is a bit of a hack, i.e. how to switch between local service and azure? The elegant solution would be to generate index.html on the fly using some scripting technology (razor or such). Didn't want to resort to this though, as it demands so much more of the server, whereas html/css/js will run anywhere. In the end, I simply look for the page's location.host and if dankahle.github.io, then hit azure, otherwise hit local with a hardcoded cloudservice virtual directory (in iis). For CORS, I have the service set the Access-Control-Allow-Origin response header for dankahle.github.io on azure and "*" locally.
 
+###### Here's the steps I came up with to create a separate gh-pages branch that had nothing to do with the master branch
+
+1.	build master // creates dist folder
+2.	backup master's gitignore // you'll use it in gh-pages
+3.	git checkout --orphan gh-pages // creates a new commit free branch (but has all of master's files in it still)
+4.	git rm -rf . // deletes all master files (leaves dist alone as it's ignored in master
+5.	add master's gitignore
+6.	copy dist dir contents to root
+7.	add and commit files // now have gitignore and your dist files only
+8.	update config for gh-pages
+9.	git push
 
