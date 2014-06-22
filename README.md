@@ -22,5 +22,5 @@ The dkServiceUrl.js file is a bit of a hack, i.e. how to switch between local se
 9.	git push
 
 ###### Why visual studio?
-As a microsoft developer developing on Windows, that never was in question, but clearly it gets in the way with its solution/project, neither of which is required. It has git support, but anyone using git will use the command line anyway. It can seamlessly publish to both azure and aws, that might be nice, but can just ftp, and for this use, I'm just pushing the deployment to github via git. Only excuse left is I don't own another ide, or lightweight one. Time to try one out I guess. 
+As a microsoft developer developing on Windows, that never was in question, but clearly it gets in the way with its solution/project, neither of which is required. It has git support, but anyone using git will use the command line anyway. It can seamlessly publish to both azure and aws, that might be nice, but can just ftp, and for this use, I'm just pushing the deployment to github via git. Only excuse left is I don't own another ide, or lightweight one. Time to try one out I guess. Ok, I'm up on webstorm. Gonna do a webstorm version of this soon.
 
